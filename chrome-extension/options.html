@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>設定</title>
+	<style>
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		.remove-button {
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		#add {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		設定
+	</h1>
+	<h2>
+		禁止Word
+	</h2>
+	<ul id="word-list-container"></ul>
+	<p>
+		<input id="new-word" placeholder="新規禁止Word">
+		<button id="add">追加</button>
+	</p>
+	<script type="module" src="./options.js"></script>
+</body>
+</html>

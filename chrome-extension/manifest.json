@@ -1,0 +1,19 @@
+{
+	"name": "Block Google Search on a Specific Word",
+	"version": "0.1.0",
+	"manifest_version": 2,
+	"permissions": [
+		"storage",
+		"https://*.google.com/",
+		"https://*.google.co.jp/",
+		"webRequest",
+		"webRequestBlocking"
+	],
+	"options_page": "options.html",
+	"background": {
+		"persistent": true,
+		"scripts": [
+			"background.js"
+		]
+	}
+}
