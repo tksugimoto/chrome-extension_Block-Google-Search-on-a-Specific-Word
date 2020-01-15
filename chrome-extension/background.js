@@ -9,8 +9,8 @@ chrome.storage.local.get(key, items => {
 
 	const callback = details => {
 		const url = new URL(details.url);
-		const searchWord = url.searchParams.get('q');
-		if (bannedWords.some(bannedWord => searchWord.includes(bannedWord))) {
+		const searchWord = url.searchParams.get('q').toLowerCase();
+		if (bannedWords.some(bannedWord => searchWord.includes(bannedWord.toLowerCase()))) {
 			return {
 				cancel: true,
 			};
